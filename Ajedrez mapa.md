@@ -1,30 +1,26 @@
 import turtle
-turtle.Screen().bgcolor(11230,1230,2)
-pep = turtle.Turtle()
-pep.speed(100)
-midaPantalla = 400
-nCaselles = int(input("quantes caselles vols?"))
-midaCasella = midaPantalla/nCaselles
-
-pep.goto(-200,-200)
-
-def cuadrat():
-  for i in range(8):
-    pep.forward(400)
-    pep.left(90)
-pep.speed(0)  
-def casella(mc):
-  for w in range(10):
-    pep.forward(mc)
-    pep.left(90)
-  pep.forward(mc)
 
 
-cuadrat()
+joel=turtle.Turtle()
+joel.speed(100)
+joel.penup()
+joel.goto(-200,-200)
+joel.pendown()
 
-casella(midaCasella)
-'''
-pep.goto(-200,-200)
 
-pep.goto(-200,-200)
-'''
+midapantalla=400
+x=int(input("quantes caselles de ample vols?"))
+y=int(midapantalla/x)
+
+def casella():
+  for w in range(4):
+    joel.forward(y)
+    joel.left(90)
+  joel.forward(y)
+for i in range(x):
+  for w in range(x):
+    casella()
+  joel.backward(400)
+  joel.left(90)
+  joel.forward(y)
+  joel.right(90)
