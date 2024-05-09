@@ -1,0 +1,51 @@
+import turtle
+
+lil = turtle.Turtle()
+
+def coret():
+  lil.pencolor("red")
+  lil.fillcolor("red")  
+  lil.penup()
+  lil.goto(0,-100)
+  lil.pendown()
+  lil.begin_fill()
+  lil.left(55)
+  lil.forward(150)
+  lil.backward(150)
+  lil.left(70)
+  lil.forward(150)
+  lil.right(125)
+  lil.penup()
+  lil.begin_fill()
+  lil.forward(175)
+  lil.end_fill()
+  lil.goto(-50,2)
+  lil.pendown()
+  lil.begin_fill()
+  lil.circle(50)
+  lil.end_fill()
+  lil.penup()
+  lil.goto(50,2)
+  lil.pendown()
+  lil.begin_fill()
+  lil.circle(50)
+  lil.end_fill()
+  lil.penup()
+  lil.begin_fill()
+  lil.goto(0,0)
+  lil.forward(50)
+  lil.left(90)
+  lil.forward(60)
+  lil.left(90)
+  lil.forward(60)
+  lil.left(90)
+  lil.forward(60)
+  lil.end_fill()
+  lil.fillcolor("red")
+
+
+
+
+coret()
+
+
